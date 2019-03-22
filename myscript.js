@@ -18,3 +18,12 @@ $(".progress").each(function() {
     .children(".value")
     .html(data + "%");
 });
+
+$(document).ready(function() {
+  $("#carouselExampleIndicators").swiperight(function() {
+    $(this).carousel("prev");
+  });
+  $("#carouselExampleIndicators").swipeleft(function() {
+    $(this).carousel("next");
+  });
+});
