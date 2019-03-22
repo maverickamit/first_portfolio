@@ -186,6 +186,21 @@ main,
   height: 25px;
 }
 
+.mydiv {
+  animation: myanimation 15s infinite;
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: rgb(233, 232, 232);
+  }
+  50% {
+    background-color: rgb(195, 231, 243);
+  }
+  100% {
+    background-color: rgb(233, 232, 232);
+  }
+}
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
