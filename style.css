@@ -33,9 +33,10 @@ body {
 }
 .carousel-caption {
   position: absolute;
-  top: 65%;
+  top: 45%;
+  color: black;
+  background-color: yellow;
   transform: translateY(-50);
-  text-shadow: 1px 1px 10px;
 }
 .carousel-caption h3,
 p {
@@ -69,7 +70,7 @@ p {
   margin-left: 15px;
 }
 .fun {
-  color: white;
+  color: whitesmoke;
   padding: 1.2rem;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -101,7 +102,7 @@ nav ul li a {
   display: inline-block;
 }
 nav ul li:hover a {
-  color: white;
+  color: whitesmoke;
 }
 .first {
   border-radius: 5px 0 0 5px;
@@ -161,6 +162,15 @@ main,
 @media (min-width: 1200px) {
   #mylogo {
     height: 80px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50);
+    color: whitesmoke;
+    background-color: transparent;
+    text-shadow: 1px 1px 10px;
   }
   .carousel-caption h3,
   p {
