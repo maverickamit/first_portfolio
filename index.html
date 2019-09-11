@@ -15,6 +15,8 @@
       crossorigin="anonymous"
     />
     <link type="text/css" href="./style.css" rel="stylesheet" />
+    <link type="text/css" href="./contactStyle.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -88,7 +90,7 @@
             />
             <div class="carousel-caption">
               <h3 class="display-4">Hi! I am Amit</h3>
-              <p>A Web Developer</p>
+              <!-- <p>A Web Developer</p> -->
             </div>
           </div>
           <div class="carousel-item">
@@ -164,12 +166,12 @@
           </div>
         </div>
         <!-- Emoji Section-->
-        <button
+        <!-- <button
           class="fun padding btn btn-primary"
           data-toggle="collapse"
           data-target="#emoji"
-        >
-          Click for fun!
+        > -->
+        <!-- Click for fun!
         </button>
         <div id="emoji" class="collapse">
           <div class="container-fluid row text-center">
@@ -186,7 +188,7 @@
               <img class="gif" src="images/gif/unicorn.gif" />
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- ProgressBar-->
         <link
@@ -263,7 +265,7 @@
         </div>
 
         <!-- Connect-->
-        <div class="container-fluid padding " id="contact">
+        <div class="container-fluid padding " id="contact1">
           <div class="row text-center padding">
             <div class="col-12">
               <hr />
@@ -280,86 +282,27 @@
           <hr />
         </div>
 
-        <!-- Contact me form-->
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10  col-lg-8">
-              <!--Form with header-->
+        <!--Contact Me form-->
 
-              <form action="mail.php" method="post">
-                <div class="card border-primary rounded-0">
-                  <div class="card-header p-0">
-                    <div class="bg-info text-white text-center py-2">
-                      <h3><i class="fa fa-envelope"></i> Contact Me</h3>
-                    </div>
-                  </div>
-                  <div class="card-body p-3">
-                    <!--Body-->
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fa fa-user text-info"></i>
-                          </div>
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          name="name"
-                          placeholder="Your name"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fa fa-envelope text-info"></i>
-                          </div>
-                        </div>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="name"
-                          name="email"
-                          placeholder="Enter your email address"
-                          required
-                        />
-                      </div>
-                    </div>
 
-                    <div class="form-group">
-                      <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <i class="fa fa-comment text-info"></i>
-                          </div>
-                        </div>
-                        <textarea
-                          class="form-control"
-                          placeholder="Please enter the message here"
-                          required
-                        ></textarea>
-                      </div>
-                    </div>
 
-                    <div class="text-center">
-                      <input
-                        type="submit"
-                        value="Send"
-                        class="btn btn-info btn-block rounded-0 py-2"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </form>
-              <!--Form with header-->
-            </div>
-          </div>
+        <div class="container">  
+          <form id="contact" action="" method="post">
+            <h3>Contact me</h3>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
         </div>
-      </div>
       <!-- Scripts -->
 
       <script
